@@ -1,0 +1,14 @@
+<div id="parent">
+This is a haiku
+<div id="popup" style="display: none">Help it's 1 in the morning<br>this wastes server space</div>
+</div>
+
+<script>
+var e = document.getElementById('parent');
+e.onmouseover = function() {
+  document.getElementById('popup').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup').style.display = 'none';
+}
+</script>
